@@ -1,5 +1,5 @@
 package servlets;
 
-public @interface MainServlet {
+public class MainServlet {
 
 }
