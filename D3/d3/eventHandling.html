@@ -1,0 +1,19 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Event Handling</title>
+	<script src='js/d3.min.js'></script>
+</head>
+<body>
+	<!-- Scalable Vector Graphics -->
+	<input type="button" value="Add Text" id="btn" />
+	<script>
+		d3.select('#btn')
+	    .on('click', function () {
+	        d3.select('body')
+	           .append('h3')
+	           .text('Today is a beautiful day!!');
+	    });
+	</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Creating a Bar Chart</title>
+	<script src='js/d3.min.js'></script>
+</head>
+<body>
+	<!-- Scalable Vector Graphics -->
+	<svg></svg>
+	<script>
+		var data = [80, 120, 60, 150, 200];
+		var barHeight = 25;
+		var spacing = 5;
+		var bar = d3.select('svg').selectAll('rect').data(data).enter().append('rect')
+	          .attr('height', barHeight - spacing)
+	          .attr('width', function(d) {  return d; })
+	          .attr('transform', function(d, i) {
+	             return "translate(0," + i * barHeight + ")";
+	          })
+	          .attr('fill', 'green');
+	</script>
+</body>
+</html>
