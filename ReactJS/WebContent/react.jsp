@@ -14,6 +14,7 @@ String component = request.getParameter("component");
 
 	<h3 style="text-align: right"><a href="index.jsp">Back</a></h3>
 	<div id="root" ></div>
+	<div id="message" ></div>
 
 </body>
 </html>

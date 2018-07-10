@@ -1,12 +1,4 @@
-<%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%
-String[] modules = {"React Components", "Class, State, Life Cycle, and Event Handlers"};
-String[] folders = {"components", "classStateEvent"};
-String[][] components = {
-	{"Rendering", "Functional Components", "Composition", "Conditional Rendering"},
-	{"Class Components", "State"}
-};
-%>
+<%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" import="static constants.IndexConstant.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,6 +20,7 @@ for(int i=0; i<modules.length; i++) {
 	}
 	%>
 	</ul>
+	<hr/>
 <%
 }
 %>
