@@ -8,14 +8,19 @@
 <body>
 <%
 for(int i=0; i<modules.length; i++) {
-%>
+	String folder = folders[i];
+	%>
 	<h4><%=modules[i]%></h4>
 	<ul>
 	<%
-	String[] component = components[i];
-	for(int j=0; j<component.length; j++) {
-	%>
-		<li><a href="react.jsp?folder=<%=folders[i]%>&component=<%=component[j].replace(" ", "")%>"><%=component[j]%></a></li>
+	for(String component : components[i]) {
+		String comp = component.replace(" ", "");
+		%>
+		<li>
+			<a href="react.jsp?folder=<%=folder%>&component=<%=comp%>"><%=component%></a>
+			---
+			<a href="/ReactJS/jsx/<%=folder%>/<%=comp%>.jsx">(jsx)</a>
+		</li>
 	<%
 	}
 	%>
