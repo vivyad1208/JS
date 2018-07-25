@@ -1,14 +1,8 @@
-
 "use strict";
-
 
 class Detail extends React.Component {
     render() {
-        return (
-            <h4>
-                {this.props.detail}
-            </h4>
-        )
+        return <h4>{this.props.detail}</h4>
     }
 }
 
@@ -50,8 +44,4 @@ class App extends React.Component {
     }
 }
 
-
-ReactDOM.render (
-    <App/>,
-    document.getElementById("root")
-)
+ReactDOM.render ( <App/>, document.getElementById("root"))
